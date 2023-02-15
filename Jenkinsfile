@@ -3,13 +3,13 @@ node {
 
     stage('Clone repository') {
       
-
+      
         checkout scm
     }
 
     stage('Build image') {
   
-       app = docker.build("raj80dockerid/test")
+       app = docker.build("sherry69/myrepo")
     }
 
     stage('Test image') {
